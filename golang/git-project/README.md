@@ -4,7 +4,8 @@
 
 
 
-### git commit 规范
+### golang 构建应用框架
 
-* https://www.conventionalcommits.org/en/v1.0.0-beta.4/
-
+* 命令行参数解析：https://github.com/spf13/pflag （**forked from [ogier/pflag](https://github.com/ogier/pflag)**）
+* 配置文件解析：https://github.com/spf13/viper
+* 应用命令行框架：https://github.com/spf13/cobra
