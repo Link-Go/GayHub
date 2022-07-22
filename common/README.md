@@ -6,7 +6,7 @@
 
 ## 模板网站
 
- - [readme 模板](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+ - [readme 模板](https://readme.so/editor)
 
 
 
