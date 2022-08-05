@@ -43,3 +43,9 @@
       "--fast"
     ]
     ```
+
+  * **[数据库代码生成工具 gormt](https://github.com/xxjwxc/gormt)**
+    * gorm
+    * 前置条件
+      * 需要在数据库中提前将表单创建好
+      * 编写配置文件, [参考路径](https://github.com/xxjwxc/gormt/blob/master/README_zh_cn.md) 
