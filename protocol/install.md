@@ -12,7 +12,25 @@
    最后两步比较的慢,耐心等待就行,完成后运行下面的命令可以看到版本的信息
    执行 protoc --version 会显示对应版本信息 libprotoc 3.21.9 说明安装成功
 
-3. Q&A
+3. ```bash
+    # 使用官方文档的demo时，需要满足前置操作
+    protoc --go_out=. --go_opt=paths=source_relative \
+        --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+        helloworld/helloworld.proto
+
+    # 前置操作，保证可以找到protoc-gen-go，protoc-gen-go-grpc两个执行文件
+    go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+    go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
+
+    export PATH="$PATH:$(go env GOPATH)/bin"
+
+    # 或者直接进入
+    cd $(go env GOPATH)/bin
+    cp protoc-gen-go /usr/local/bin/
+    cp protoc-gen-go-grpc /usr/local/bin/
+   ```
+
+#### Q&A
 * ```bash
     ...
     configure: error: C++ preprocessor "/lib/cpp" fails sanity check

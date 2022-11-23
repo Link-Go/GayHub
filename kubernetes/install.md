@@ -42,7 +42,12 @@
        ```
 
   * 无法下载k8s镜像
+    * ```bash
+      # 指定镜像地址
+      kubeadm init --image-repository registry.aliyuncs.com/google_containers 
+      ```
 
+    * 直接使用上述指令，下面操作过于繁琐
     * kubeadm config images pull  下载镜像失败；国内正常访问不到k8s.cgr.io，可以替换阿里加速镜像地址：registry.aliyuncs.com/google_containers，执行如下命令
 
       * ```bash
