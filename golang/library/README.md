@@ -16,3 +16,8 @@
 - **[go-spew](https://github.com/davecgh/go-spew)**
     * 变量数据结构调试利器 go-spew
     * 可以将`struct`字段所有的信息，所有层级具体的数据结构，包含类型、字段、字段类型、字段值等信息输出到指定位置
+
+- **[lo](https://github.com/samber/lo)**
+    * 为高效循环而创建迭代器的函数
+    * 可以更好的处理一个数据集合，map, slice 等迭代遍历操作
+    * version >= go 1.18

@@ -9,6 +9,11 @@
             fmt.Println("do some cleanup")
         }
     ```
+* 单元测试框架： **[testify](https://github.com/stretchr/testify)**
+    * assert package: 友好的代码断言工具包
+    * require package: 提供全局函数
+    * mock package: 插桩
+    * suite package: 面向对象方式的单元测试
 * 单元测试生成工具： **[gotests工具](https://github.com/cweill/gotests)**
 * Mock 测试
     * **[mock仓库](https://github.com/golang/mock)**
