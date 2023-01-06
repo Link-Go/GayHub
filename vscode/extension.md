@@ -20,6 +20,7 @@ code --install-extension eamodio.gitlens
 code --install-extension formulahendry.code-runner
 code --install-extension GitHub.remotehub
 code --install-extension golang.go
+code --install-extension metaseed.MetaJump
 code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension MS-CEINTL.vscode-language-pack-zh-hans
@@ -41,6 +42,7 @@ code --install-extension nhoizey.gremlins
 code --install-extension premparihar.gotestexplorer
 code --install-extension quicktype.quicktype
 code --install-extension SirTori.indenticator
+code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension stuart.unique-window-colors
 code --install-extension techer.open-in-browser
 code --install-extension unbug.codelf
