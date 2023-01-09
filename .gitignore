@@ -1,0 +1,5 @@
+.vscode
+.idea
+go.sum
+log
+bin
