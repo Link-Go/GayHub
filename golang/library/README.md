@@ -21,3 +21,52 @@
     * 为高效循环而创建迭代器的函数
     * 可以更好的处理一个数据集合，map, slice 等迭代遍历操作
     * version >= go 1.18
+
+- **[mapstructure](https://github.com/mitchellh/mapstructure)**
+    * `map to struct`
+    * 在某些数据流（json）中，你不太清楚数据的具体结构，需要通过其中的某个字段（type）来判断数据的结构。可以将该数据转为`map[string]interface{}`，识别后再转换为`struct`
+    * demo
+    ```golang
+    package main
+
+    import (
+        "fmt"
+
+        "github.com/mitchellh/mapstructure"
+    )
+
+    func ExampleDecode() {
+        type Person struct {
+            Name   string
+            Age    int
+            Emails []string
+            Extra  map[string]string
+        }
+
+        // This input can come from anywhere, but typically comes from
+        // something like decoding JSON where we're not quite sure of the
+        // struct initially.
+        input := map[string]interface{}{
+            "name":   "Mitchell",
+            "age":    91,
+            "emails": []string{"one", "two", "three"},
+            "extra": map[string]string{
+                "twitter": "mitchellh",
+            },
+        }
+
+        var result Person
+        err := mapstructure.Decode(input, &result)
+        if err != nil {
+            panic(err)
+        }
+
+        fmt.Printf("%#v", result)
+        // Output:
+        // mapstructure.Person{Name:"Mitchell", Age:91, Emails:[]string{"one", "two", "three"}, Extra:map[string]string{"twitter":"mitchellh"}}
+    }
+    ```
+
+- **[gin-dump](https://github.com/tpkeeper/gin-dump)**
+    * 输出出req ,res的header和body内容，方便观察请求和相应结果
+    * 代码实现了body数据无法多次去除的逻辑
