@@ -70,3 +70,7 @@
 - **[gin-dump](https://github.com/tpkeeper/gin-dump)**
     * 输出出req ,res的header和body内容，方便观察请求和相应结果
     * 代码实现了body数据无法多次去除的逻辑
+
+- **[automaxprocs](https://github.com/uber-go/automaxprocs)**
+    * 自动设置GOMAXPROCS以匹配 Linux 容器 CPU 配额
+    * [详细说明](./automaxprocs.md)
