@@ -74,3 +74,6 @@
 - **[automaxprocs](https://github.com/uber-go/automaxprocs)**
     * 自动设置GOMAXPROCS以匹配 Linux 容器 CPU 配额
     * [详细说明](./automaxprocs.md)
+
+- **[allocate](https://github.com/cjrd/allocate)**
+    * 初始化struct内各字段为默认零值而非nil值
