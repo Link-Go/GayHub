@@ -77,3 +77,9 @@
 
 - **[allocate](https://github.com/cjrd/allocate)**
     * 初始化struct内各字段为默认零值而非nil值
+
+- **[fsnotify](https://github.com/fsnotify/fsnotify)**
+    * 文件变化监测
+    * fsnotify 本质上就是对系统能力的一个浅层封装，主要封装了操作系统提供的两个机制
+        * inotify 机制
+        * epoll 机制
