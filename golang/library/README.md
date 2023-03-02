@@ -89,3 +89,10 @@
     * 基本topic实现的 pub/sub 模式，实现各模块间解耦
     * 使用场景
         * 任务信息传递
+
+- **[validator](https://github.com/go-playground/validator)**
+    * 使用最为广泛的数据校验库
+
+- **[gopsutil](https://github.com/shirou/gopsutil)**
+    * 获取各种系统信息的库
+    * python 的移植版 [`psutil`](https://github.com/giampaolo/psutil) 
