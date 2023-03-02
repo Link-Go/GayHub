@@ -83,3 +83,9 @@
     * fsnotify 本质上就是对系统能力的一个浅层封装，主要封装了操作系统提供的两个机制
         * inotify 机制
         * epoll 机制
+
+- **[message-bus](https://github.com/vardius/message-bus)**
+    * 异步消息通知组件，实现各个模块间数据共享
+    * 基本topic实现的 pub/sub 模式，实现各模块间解耦
+    * 使用场景
+        * 任务信息传递
