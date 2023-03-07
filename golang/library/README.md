@@ -96,3 +96,7 @@
 - **[gopsutil](https://github.com/shirou/gopsutil)**
     * 获取各种系统信息的库
     * python 的移植版 [`psutil`](https://github.com/giampaolo/psutil) 
+
+- **[errgroup](golang.org/x/sync/errgroup)**
+    * 对 goroutine 返回数据进行 error 处理
+    * 通过 SetLimit 限制协程数量
