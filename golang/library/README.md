@@ -100,3 +100,7 @@
 - **[errgroup](golang.org/x/sync/errgroup)**
     * 对 goroutine 返回数据进行 error 处理
     * 通过 SetLimit 限制协程数量
+
+- **[singleflight](golang.org/x/sync/singleflight)**
+    * 将多个相同的请求合并，只执行一次，所有请求返回相同的结果
+    * 预防缓存击穿
