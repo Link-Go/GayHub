@@ -104,3 +104,6 @@
 - **[singleflight](golang.org/x/sync/singleflight)**
     * 将多个相同的请求合并，只执行一次，所有请求返回相同的结果
     * 预防缓存击穿
+
+- **[ants](https://github.com/panjf2000/ants)**
+    * 一个高性能且低损耗的 goroutine 池
