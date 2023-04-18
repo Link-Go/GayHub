@@ -107,3 +107,6 @@
 
 - **[ants](https://github.com/panjf2000/ants)**
     * 一个高性能且低损耗的 goroutine 池
+
+- **[chanx](https://github.com/smallnest/chanx)**
+    * 无限缓存的channel
