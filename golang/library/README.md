@@ -113,3 +113,7 @@
 
 - **[reviewdog](https://github.com/reviewdog/reviewdog)**
     * 静态代码检测
+
+- **[fastcache](https://github.com/VictoriaMetrics/fastcache)**
+    * 缓存库
+    * 介绍: https://www.cnblogs.com/ahfuzhang/p/15840313.html
