@@ -6,6 +6,16 @@
 
 同一个对象的多次调谐是串行执行，不同对象是并发执行
 
+对于短时间出现的多个事件，会进行优化处理，并不是每次事件都会触发调谐，可能是中间态的某个事件，或者最后一个事件触发调谐
+
+* 将某个`CR`的状态按一定时间间隔（10s）进行修改，每次调谐耗时1m
+
+  * 状态修改：Deploying --> DeployFailed --> Updating --> UpdateFailed --> Deleting
+
+  * 实际触发了调谐只有 Deploying，Deleting 这两个状态的事件 
+
+    
+
 ```golang
 import (
 	ctrl "sigs.k8s.io/controller-runtime"
